@@ -1,0 +1,107 @@
+<html>
+    <head>
+        <title>
+            Login details
+        </title>
+        <link rel="stylesheet" href="login.css">
+
+        <script>
+            function popup(){
+
+                const name=document.getElementById('name');
+                const name1=document.getElementById('name1');
+                if(name.value === '') {
+                    alert('Please Enter Your Name');
+                }
+                else if(name1.value === '') {
+                    alert('Please Enter Your Password');
+                }
+                else{
+                    window.location.href='main_file.html';
+                }
+            }
+
+        </script>
+
+
+
+
+    </head>
+    <body class="Login">
+
+        <div class="byt">
+            <h1>BYT</h1>
+        </div>
+
+        <div class="small">
+            BooK YouR TicketS
+        </div>
+        <div class="heading">
+            <center>
+                <h1>BooK YouR TicketS</h1>
+            </center>
+        </div>
+        <div class="mt">
+            <h1>
+                MT
+            </h1>
+        </div>
+        <div class="smallmt">
+            MoviE TicketS
+        </div>
+        <div class="back">
+
+            <center>
+              <a href="file.html" input type="button"> <b>Back</b> </a>
+            </center>
+        </div>
+        <div class="line">
+              <h1></h1>
+        </div>
+
+
+        <div class="user">
+           <center>
+              <h1>Login to Enter Our Page</h1>
+           </center>  
+           <div>
+              <div class="name">
+                  <h1>Name:<input id="name" type="text" name="search" placeholder="Enter Your Name" ></h1>
+              </div>
+              <div class="password">
+                <div>
+                    
+                    <h1>Password:<input id="name1" type="password" length="10" minlength="8" maxlength="15" placeholder="Enter your Password" required ></h1> 
+                    
+                </div>
+            <center> 
+            <div class="center">
+               <!--<a href="Taking_Password.html">OK</a>
+               <a href="file.html">Cancel</a>-->
+               <div>
+                  <a input type="submit" href="#" value="Submit" onclick="popup()">Submit</a> 
+                  <a input type="reset" href="login.html" value="reset">reset</a> 
+               </div>
+               <div class="line1">
+                    <h1></h1>
+               </div>
+               <center>
+               <p>
+                Here you can book your Tickets by loging into our page.
+                To Login into our page you need to provide your Name and Password with us.
+                </p>
+                </center>
+           </center>    
+           <div class="line2">
+               <h1></h1>
+            </div>
+
+            <div class="copy_right">
+                <center>
+                  All Rights Reserved   ||   Copy-Right   ||   Settings <p> contact: <blink>+91-9000000001</blink>  ||   E-mail:<a href="mailto:nadendlagiri2003@gmail.com"> Nadendla Giri</a></p>
+                </center>
+            </div>
+            
+        </div>   
+    </body>
+</html>

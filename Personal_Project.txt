@@ -1,0 +1,12 @@
+			      Booking Tickets in Theatre 
+
+--->Creating login page by using JAVA SCRIPT.
+--->Creating web page for showing moives using HTML,CSS.
+--->Displaying the content related to the specific movie when the user click on movie name.
+--->Adjusting when cruser move on to the photo of the movie then it shows the rating provided by         IMBD.
+--->Adding the icon for booking tickets in theatre.
+
+
+
+--->Creating java program for taking details of people who wants to book the tickets in our        webpage.
+--->Storing their details in a DATABASE by using SQL.   
