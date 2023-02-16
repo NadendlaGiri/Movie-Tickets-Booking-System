@@ -1,0 +1,93 @@
+.body .heading h1{
+    color: beige;
+    font-size: 3em;
+    margin-left: 27%;
+    margin-right: 30%;
+
+}
+.footer .copy_right{
+    color: white;
+    margin-top: 3px;
+}
+.footer .copy_right p{
+    color: white;
+    margin-top: 0px;
+}
+.footer .copy_right p a{
+    text-decoration: none;
+}
+.small{
+    color: goldenrod;
+    float: left;
+    font-size: 10px;
+    margin-left: 2px;
+    margin-top: 43px;
+    letter-spacing: 2px;
+    word-spacing: 7px;
+}
+
+.byt{
+    color: red;
+    float: left;
+    margin-top: -63px;
+    font-size: 2em;
+    width: 100px;
+    height: 35px;
+    margin-bottom: 2px;
+}
+.login a:hover{
+    background: orangered;
+    color:black;
+    transition: 0.3s;
+}
+.Login a{
+    padding: 5px 10px 5px 10px;
+    background-color: orangered;
+    color: white;
+    text-decoration: none;
+    border: white solid 2px;
+    float: right;
+    margin-top: -15px;
+    margin-right: 40px;   
+
+}
+.body{
+    background-color: black;
+    width: 100%;
+
+}
+.line{ 
+    
+    width: 1525px;
+    height: 5px;
+    background-color: orangered;
+    margin-top: -30px;
+    
+}
+ .footer .line2{
+    width: 1525px;
+    height: 5px;
+    background-color: orangered;
+}
+.mt{
+    color: yellow;
+    float: right;
+    margin-top: -150px;
+    font-size: 2em;
+    width: 100px;
+    height: 35px;
+    margin-bottom: 2px;
+    margin-right: 20px;
+}
+.footer{
+    margin-top: 570px;
+}
+.smallmt{
+    color: goldenrod;
+    float: right;
+    font-size: 13px;
+    margin-right: 16px;
+    margin-top: -45px;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+}
