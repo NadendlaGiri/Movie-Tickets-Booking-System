@@ -55,9 +55,23 @@
             <input type="text" id="feedback" name="feedback" size="50" maxlength="100">
             
         </div>
+
+        
+
+
         <div class="button">
-            <button type="submit" onclick="popup()">Submit</button>
+            <button type="button" onclick="popup()">Submit</button>
         </div>
+
+        <!-- <div id="mymodal" class="modal">
+            <div class="modal">
+                please enter value 
+                <button onclick="closemodal()">ok</button>
+            </div>
+        </div> -->
+
+
+
         </div>
         <script>
             function popup(){
@@ -67,9 +81,30 @@
                     }
                     else{
                         alert('Thank You for Your respose');
+                        window.location.reload();
                     }
-            }
-        </script>
+                }
+            // function closemodal(){
+            //      document.getElementById("mymodal").style.display="none";
+            // }
+   </script>
+
+// <script>
+//     function popup(){
+//         document.getElementById("alert").style.display = "block";
+//         document.boby.classList.add("blur");
+//     }
+//     function blur(){
+//         document.getElementsByClassName("alert").remove("blur");
+//         document.body.classList.remove("blur");
+//     }
+//     function seen(){
+//         document.getElementById("alert").style.display = "none";
+//         document.body.classList.remove("blur");
+//     }
+// </script>
+
+
 
         <div class="line2">
             <h1></h1>

@@ -1,0 +1,142 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="sign.css">
+
+
+        <script>
+            function popup(){
+                var take_input=document.getElementById('name');
+                var take_input1=document.getElementById('name1');
+                localStorage.setItem(take_input.value, take_input1.value);
+                sessionStorage.setItem(take_input.value, take_input1.value);
+                const vas =localStorage.setItem(take_input.value,take_input1.value)
+
+                let name3 = localStorage.getItem(take_input.value)
+
+                const name=document.getElementById('name');
+                const name1=document.getElementById('name1');
+                const name2=document.getElementById('name2');
+
+                if(name.value === '') {
+                    alert('Please Enter Your Name');
+                }
+                else if(name1.value === '') {
+                    alert('Please Enter Your Password');
+                }
+                else if(name2.value != name1.value){
+                    alert('Not matching your password');
+                }
+                else if(name3.value === name.value){
+                    alert('Seems like you already login to this website');
+                }
+                else{
+                    window.location.href='main_file.html';
+                }
+            }
+            //      var take_input=document.getElementById('name');
+            //     var take_input1=document.getElementById('name1');
+            //     const vas =localStorage.setItem(take_input.value,take_input1.value)
+            //    const va =localStorage.getItem(take_input.value,take_input1.value)
+            //    if(vas == va){
+            //         alert("thank you")
+            //     }
+
+
+            function save_valu(){
+                window.location.reload();
+            }
+            
+
+
+            
+        </script>
+
+
+    </head>
+    <body>
+        <div class="total">
+
+            <!--Header block Begins-->
+                <div class="header">
+                    <div class="byt">
+                        <h1>BYT</h1>
+                    </div>
+
+                    <div class="small">
+                        BooK YouR TicketS
+                    </div>
+                    <div class="heading">
+                        <center>
+                            <h1>BooK YouR TicketS</h1>
+                        </center>
+                    </div>
+                    <div class="m">
+                        <div class="mt">
+                            <h1>
+                                MT
+                            </h1>
+                        </div>
+                        <div class="smallmt">
+                            MoviE TicketS
+                        </div>
+                    </div>
+                    <div class="line">
+                        <h1></h1>
+                    </div>
+                </div>  
+            <!--Header block close-->
+
+            <!--Content starts from here-->
+
+            <div class="back">
+                <a href="file.html">Back </a>
+            </div>
+            <div>
+                <div class="user">
+                    <center>
+                        <h1>Please Sign in to Enter Our Page</h1>
+                    </center>  
+                <div>
+                    <div class="name">
+                        <h1>Name:<input id="name" type="text" name="search" placeholder="Enter Your Name" ></h1>
+                    </div>
+                    <div class="password">
+                        <div>
+                            <h1>Password:<input id="name1" type="password" length="10" minlength="8" maxlength="15" placeholder="Enter your Password" required ></h1> 
+                        </div>
+                        <div class="pass">
+                            <h1>Password:<input id="name2" type="password" length="10" minlength="8" maxlength="15" placeholder="Re type your password" required ></h1> 
+                        </div>
+                    <center> 
+                    <div class="center">
+                    <div>
+                        <a input type="submit" href="#" value="Submit" onclick="popup()">Submit</a> 
+                        <a input type="reset" href="#" value="reset" id="reset" onclick="save_valu()">reset</a> 
+                    </div>
+                    <div class="line1">
+                            <h1></h1>
+                    </div>
+                    <center>
+                    <p>
+                        Here you can book your Tickets by Sign in into our page.
+                        To Sign in into our page you need to provide your Name and Password with us.
+                        </p>
+                    </center>
+                </center>    
+            </div>
+            <!--Content ends here-->
+            <!--Footer Starts from here-->
+            <div class="line2">
+                <h1></h1>
+                </div>
+
+                <div class="copy_right">
+                    <center>
+                    All Rights Reserved   ||   Copy-Right   ||   Settings <p> contact: <blink>+91-9000000001</blink>  ||   E-mail:<a href="mailto:nadendlagiri2003@gmail.com">Nadendla Giri</a></p>
+                    </center>
+                </div>
+            <!--Footer ends here-->
+
+        </div>
+    </body>
+</html>       
