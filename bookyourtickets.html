@@ -14,7 +14,11 @@
             const checkboxes = container.querySelectorAll('input[type="checkbox"]');
             for(let i =0;i<checkboxes.length;i++){
                 if(checkboxes[i].checked){
+                    localStorage.setItem(checkbox.id,true);
                     isChecked = true;
+                }
+                else{
+                    localStorage.setItem(checkbox.id,false);
                 }
             }
            });
@@ -29,11 +33,14 @@
 
               }
            }
-        }         
+        }      
+        
+        
         </script>
+
     </head>
     <body >
-        
+         
         <div class="byt">
             <h1>BYT</h1>
         </div>
@@ -56,7 +63,7 @@
         </div>
         <div class="back">
             <center>
-              <a href="main_file.html" input type="button"> <b>Back</b> </a>
+              <a href="location.html" input type="button"> <b>Back</b> </a>
             </center>
         </div>
         <div class="line">
@@ -83,262 +90,291 @@
                 <input type="radio" id="rpc" value="Reserved for Physically Challenged" disabled>
                 <label for="rpc">For Physically Challenged</label>
             </div>
-            <div class="checkbox" id="i">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-             </center>
-            </div>
-            <div class="checkbox">
-            <center>
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-             </center>
-            </div>
-            <div class="checkbox">
-             <center>
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-             </center>
-            </div>
-            <div class="checkbox">
-            <center>
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-             </center>
-            </div>
-            <div class="checkbox">
-            <center>
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-             </center>
-            </div>
-            <div class="checkbox">
-            <center>
-                <input type="radio">
-                <input type="radio">
-                <input type="radio">
-                <input type="radio">
-                <input type="radio">
-                <input type="radio">
-                <input type="radio">
-                <input type="radio">
-                <input type="radio">
-                <input type="radio">
-                <input type="radio">
-             </center>
-            </div>
-            <div>
-              <h1></h1>
-            </div>
-        
-            <div class="checkbox">
-              <center>
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-             </center>
-            </div>
 
-          <div class="checkbox">
-            <center>
-           <input type="checkbox">
-           <input type="checkbox">
-           <input type="checkbox">
-           <input type="checkbox">
-           <input type="checkbox">
-           <input type="checkbox">
-           <input type="checkbox">
-           <input type="checkbox">
-           <input type="checkbox">
-           <input type="checkbox">
-           <input type="checkbox">
-           <input type="checkbox">
-           <input type="checkbox">
-           <input type="checkbox">
-           <input type="checkbox">
-           <input type="checkbox">
-           <input type="checkbox">
-           <input type="checkbox">
-           <input type="checkbox">
-           <input type="checkbox">
-           <input type="checkbox">
-           </center>
-          </div>
-           <div class="checkbox">
-              <center>
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-             </center>
-            </div>
+                    <div class="selected" id="selected" checked>
 
-            <div class="checkbox">
-           <center>
-           <input type="checkbox">
-           <input type="checkbox">
-           <input type="checkbox">
-           <input type="checkbox">
-           <input type="checkbox">
-           <input type="checkbox">
-           <input type="checkbox">
-           <input type="checkbox">
-           <input type="checkbox">
-           <input type="checkbox">
-           <input type="checkbox">
-           <input type="checkbox">
-           <input type="checkbox">
-           <input type="checkbox">
-           <input type="checkbox">
-           <input type="checkbox">
-           <input type="checkbox">
-           <input type="checkbox">
-           <input type="checkbox">
-           <input type="checkbox">
-           <input type="checkbox">
-           </center>
-            </div>
+                            <div class="checkbox" id="checkbox" >
+                                <input type="checkbox" id="a">
+
+                                <input type="checkbox" id="a2" name= 'a2' value='on' onclick="check()" >
+                                <input type="checkbox" id="a3">
+                                <input type="checkbox" id="a4">
+                                <input type="checkbox" id="a5">
+                                <input type="checkbox" id="a6">
+                                <input type="checkbox" id="a7">
+                                <input type="checkbox" id="a8">
+                                <input type="checkbox" id="a9">
+                                <input type="checkbox" id="a10">
+                                <input type="checkbox" id="a11">
+                                <input type="checkbox" id="a12">
+                                <input type="checkbox" id="a13">
+                                <input type="checkbox" id="a14">
+                                <input type="checkbox" id="a15">
+                                <input type="checkbox" id="a16">
+                                <input type="checkbox" id="a17">
+                                <input type="checkbox" id="a18">
+                                <input type="checkbox" id="a19">
+                                <input type="checkbox" id="a20">
+                                <input type="checkbox" id="a">
+                            </center>
+                            </div>
+                            <div class="checkbox" id="checkbox">
+                                <center>
+                                <input type="checkbox" id="a21">
+                                <input type="checkbox" id="a22">
+                                <input type="checkbox" id="a23">
+                                <input type="checkbox" id="a24">
+                                <input type="checkbox" id="a25">
+                                <input type="checkbox" id="a26">
+                                <input type="checkbox" id="a27">
+                                <input type="checkbox" id="a28">
+                                <input type="checkbox" id="a29">
+                                <input type="checkbox" id="a30">
+                                <input type="checkbox" id="a31">
+                                <input type="checkbox" id="a32">
+                                <input type="checkbox" id="a33">
+                                <input type="checkbox" id="a34">
+                                <input type="checkbox" id="a35">
+                                <input type="checkbox" id="a36">
+                                <input type="checkbox" id="a37">
+                                <input type="checkbox" id="a38">
+                                <input type="checkbox" id="a39">
+                            </center>
+                            </div>
+                            <div class="checkbox" id="checkbox">
+                                <center>
+                                    <input type="checkbox" id="b1">
+                                    <input type="checkbox" id="b2">
+                                    <input type="checkbox" id="b3">
+                                    <input type="checkbox" id="b4">
+                                    <input type="checkbox" id="b5">
+                                    <input type="checkbox" id="b6">
+                                    <input type="checkbox" id="b7">
+                                    <input type="checkbox" id="b8">
+                                    <input type="checkbox" id="b9">
+                                    <input type="checkbox" id="b10">
+                                    <input type="checkbox" id="b11">
+                                    <input type="checkbox" id="b12">
+                                    <input type="checkbox" id="b13">
+                                    <input type="checkbox" id="b14">
+                                    <input type="checkbox" id="b15">
+                                    <input type="checkbox" id="b16">
+                                    <input type="checkbox" id="b17">
+                                </center>
+                            </div>
+                            <div class="checkbox" id="checkbox">
+                                <center>
+                                    <input type="checkbox" id="c1">
+                                    <input type="checkbox" id="c2">
+                                    <input type="checkbox" id="c3">
+                                    <input type="checkbox" id="c4">
+                                    <input type="checkbox" id="c5">
+                                    <input type="checkbox" id="c6">
+                                    <input type="checkbox" id="c7">
+                                    <input type="checkbox" id="c8">
+                                    <input type="checkbox" id="c9">
+                                    <input type="checkbox" id="c10">
+                                    <input type="checkbox" id="c11">
+                                    <input type="checkbox" id="c12">
+                                    <input type="checkbox" id="c13">
+                                    <input type="checkbox" id="c14">
+                                    <input type="checkbox" id="c15">
+                                </center>
+                            </div>
+                            <div class="checkbox" id="checkbox">
+                                <center>
+                                    <input type="checkbox" id="d1">
+                                    <input type="checkbox" id="d2">
+                                    <input type="checkbox" id="d3">
+                                    <input type="checkbox" id="d4">
+                                    <input type="checkbox" id="d5">
+                                    <input type="checkbox" id="d5">
+                                    <input type="checkbox" id="d6">
+                                    <input type="checkbox" id="d7">
+                                    <input type="checkbox" id="d8">
+                                    <input type="checkbox" id="d9">
+                                    <input type="checkbox" id="d10">
+                                    <input type="checkbox" id="d11">
+                                    <input type="checkbox" id="d12">
+                                </center>
+                            </div>
+                            <div class="checkbox" id="checkbox">
+                                <center>
+                                    <input type="radio" id="a1">
+                                    <input type="radio" id="a2">
+                                    <input type="radio" id="a3">
+                                    <input type="radio" id="a4">
+                                    <input type="radio" id="a5">
+                                    <input type="radio" id="a6">
+                                    <input type="radio" id="a7">
+                                    <input type="radio" id="a8">
+                                    <input type="radio" id="a9">
+                                    <input type="radio" id="a11">
+                                    <input type="radio" id="a10">
+                                </center>
+                            </div>
+                            <div>
+                            <h1></h1>
+                            </div>
+                        
+                            <div class="checkbox" id="checkbox">
+                                <center>
+                                    <input type="checkbox" id="f1">
+                                    <input type="checkbox" id="f2">
+                                    <input type="checkbox" id="f3">
+                                    <input type="checkbox" id="f4">
+                                    <input type="checkbox" id="f5">
+                                    <input type="checkbox" id="f6">
+                                    <input type="checkbox" id="f7">
+                                    <input type="checkbox" id="f8">
+                                    <input type="checkbox" id="f9">
+                                    <input type="checkbox" id="f10">
+                                    <input type="checkbox" id="f11">
+                                    <input type="checkbox" id="f12">
+                                    <input type="checkbox" id="f13">
+                                    <input type="checkbox" id="f14">
+                                    <input type="checkbox" id="f15">
+                                    <input type="checkbox" id="f16">
+                                    <input type="checkbox" id="f17">
+                                    <input type="checkbox" id="f18">
+                                    <input type="checkbox" id="f19">
+                                    <input type="checkbox" id="f20">
+                                    <input type="checkbox" id="f21">
+                                </center>
+                            </div>
+
+                            <div class="checkbox" id="checkbox">
+                                <center>
+                                    <input type="checkbox" id="g1">
+                                    <input type="checkbox" id="g2">
+                                    <input type="checkbox" id="g3">
+                                    <input type="checkbox" id="g4">
+                                    <input type="checkbox" id="g5">
+                                    <input type="checkbox" id="g6">
+                                    <input type="checkbox" id="g7">
+                                    <input type="checkbox" id="g8">
+                                    <input type="checkbox" id="g9">
+                                    <input type="checkbox" id="g10">
+                                    <input type="checkbox" id="g11">
+                                    <input type="checkbox" id="g12">
+                                    <input type="checkbox" id="g13">
+                                    <input type="checkbox" id="g14">
+                                    <input type="checkbox" id="g15">
+                                    <input type="checkbox" id="g16">
+                                    <input type="checkbox" id="g17">
+                                    <input type="checkbox" id="g18">
+                                    <input type="checkbox" id="g19">
+                                    <input type="checkbox" id="g20">
+                                    <input type="checkbox" id="g21">
+                            </center>
+                            </div>
+                            <div class="checkbox" id="checkbox">
+                                <center>
+                                    <input type="checkbox" id="h1">
+                                    <input type="checkbox" id="h2">
+                                    <input type="checkbox" id="h3">
+                                    <input type="checkbox" id="h4">
+                                    <input type="checkbox" id="h5">
+                                    <input type="checkbox" id="h6">
+                                    <input type="checkbox" id="h7">
+                                    <input type="checkbox" id="h8">
+                                    <input type="checkbox" id="h9">
+                                    <input type="checkbox" id="h10">
+                                    <input type="checkbox" id="h11">
+                                    <input type="checkbox" id="h12">
+                                    <input type="checkbox" id="h13">
+                                    <input type="checkbox" id="h14">
+                                    <input type="checkbox" id="h15">
+                                    <input type="checkbox" id="h16">
+                                    <input type="checkbox" id="h17">
+                                    <input type="checkbox" id="h18">
+                                    <input type="checkbox" id="h19">
+                                    <input type="checkbox" id="h20">
+                                    <input type="checkbox" id="h21">
+                                </center>
+                            </div>
+
+                            <div class="checkbox" id="checkbox">
+                                <center>
+                                    <input type="checkbox" id="">
+                                    <input type="checkbox" id="i1">
+                                    <input type="checkbox" id="i2">
+                                    <input type="checkbox" id="i3">
+                                    <input type="checkbox" id="i4">
+                                    <input type="checkbox" id="i5">
+                                    <input type="checkbox" id="i6">
+                                    <input type="checkbox" id="i7">
+                                    <input type="checkbox" id="i8">
+                                    <input type="checkbox" id="i9">
+                                    <input type="checkbox" id="i10">
+                                    <input type="checkbox" id="i11">
+                                    <input type="checkbox" id="i12">
+                                    <input type="checkbox" id="i13">
+                                    <input type="checkbox" id="i14">
+                                    <input type="checkbox" id="i15">
+                                    <input type="checkbox" id="i16">
+                                    <input type="checkbox" id="i17">
+                                    <input type="checkbox" id="i18">
+                                    <input type="checkbox" id="i19">
+                                    <input type="checkbox" id="i20" name="q">
+                                </center>
+                            </div>
+                    </div>    
         </div>
+        
 
         <div class="line1">
             <h1>
 
             </h1>
         </div>
-        <script>
-            function check(){
-            const checkboxes = document.querySelectorAll('input[type="checkbox"]');
-            checkboxes.forEach((checkbox) => {
-                checkbox.addEventListener('change',(event)=> {
-                    if(event.target.checked){
-                        console.log('checkbox ${event.target.value} is checked');
-                    }
-                    else{
-                        console.log('checkbox ${event.target.value} is checked');
-                    }
-                });
-            });
-        }
-        </script>
         
+        <script>
+            
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        var checkedcheckboxes = [];
+        for(var i =0;i<checkboxes.length;i++){
+           var checkboxid = checkboxes[i].id;
+           var isChecked = localStorage.getItem(checkboxid);
+           if(isChecked === "true"){
+            checkboxes[i].checked = true;
+           }
+           else{
+            checkboxes[i].checked = false;
+           }
+           checkboxes[i].addEventListener('change',function(){
+            var checkboxid=this.id;
+            var isChecked = this.checked;
+            localStorage.setItem(checkboxid,isChecked);
+           });
+        }
+
+
+           // function handleclick(){
+                function deselectall(){
+                    var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+                    for (var i=0;i<checkboxes.length;i++){
+                        checkboxes[i].checked = false;
+                        localStorage.setItem(checkboxes[i].id,false);
+                    }
+                }
+            //}
+            handleclick();
+            setInterval(handleclick,3*60*60*1000);
+        function check(e) {
+
+        }
+
+        </script>
+
         <div class="input">
-            <a href="#" name="reset" onclick="popup()" >Submit</a>
+            <a href="#" name="reset" onclick="popup()">Submit</a>
+            
         </div>
         <div class="copy_right">
             <center>
-              All Rights Reserved   ||   Copy-Right   ||   Settings <p> contact: <blink>+91-9000000001</blink>  ||   E-mail:<a href="mailto:nadendlagiri2003@gmail.com"> Nadendla Giri</a></p>
+              All Rights Reserved   ||   Copy-Right   ||   <button onclick="deselectall()" >Settings</button> <p> contact: <blink>+91-9000000001</blink>  ||   E-mail:<a href="mailto:nadendlagiri2003@gmail.com"> Nadendla Giri</a></p>
             </center>
         </div>
-       
-    </body>
+     </body>
 </html>

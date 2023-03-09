@@ -7,6 +7,16 @@
 
         <script>
             function popup(){
+                var take_input=document.getElementById('name');
+                var take_input1=document.getElementById('name1');
+                localStorage.setItem(take_input.value, take_input1.value);
+                sessionStorage.setItem(take_input.value, take_input1.value);
+                const vas =localStorage.setItem(take_input.value,take_input1.value)
+
+                const va =localStorage.getItem(take_input.value,take_input1.value)
+               if(vas == va){
+                    alert("thank you")
+                }
 
                 const name=document.getElementById('name');
                 const name1=document.getElementById('name1');
@@ -20,7 +30,25 @@
                     window.location.href='main_file.html';
                 }
             }
+            //      var take_input=document.getElementById('name');
+            //     var take_input1=document.getElementById('name1');
+            //     const vas =localStorage.setItem(take_input.value,take_input1.value)
+            //    const va =localStorage.getItem(take_input.value,take_input1.value)
+            //    if(vas == va){
+            //         alert("thank you")
+            //     }
 
+
+            function save_valu(){
+                
+
+                // localStorage.removeItem('reset');
+                window.location.reload();
+            }
+            
+
+
+            
         </script>
 
 
@@ -28,7 +56,7 @@
 
     </head>
     <body class="Login">
-
+      <div class="total">
         <div class="byt">
             <h1>BYT</h1>
         </div>
@@ -41,16 +69,24 @@
                 <h1>BooK YouR TicketS</h1>
             </center>
         </div>
-        <div class="mt">
-            <h1>
-                MT
-            </h1>
-        </div>
-        <div class="smallmt">
-            MoviE TicketS
-        </div>
-        <div class="back">
 
+
+        <div class="mtt">
+                <div class="mt">
+                    <h1>
+                        MT
+                    </h1>
+                </div>
+                <div>
+                    <div class="smallmt">
+                        MoviE
+                    </div>
+                    <div class="smallmt1">
+                        TicketS
+                    </div>
+                </div>
+        </div>        
+            <div class="back">
             <center>
               <a href="file.html" input type="button"> <b>Back</b> </a>
             </center>
@@ -75,12 +111,13 @@
                     
                 </div>
             <center> 
+
+            
             <div class="center">
-               <!--<a href="Taking_Password.html">OK</a>
-               <a href="file.html">Cancel</a>-->
+              
                <div>
                   <a input type="submit" href="#" value="Submit" onclick="popup()">Submit</a> 
-                  <a input type="reset" href="login.html" value="reset">reset</a> 
+                  <a input type="reset" href="#" value="reset" id="reset" onclick="save_valu()">reset</a> 
                </div>
                <div class="line1">
                     <h1></h1>
@@ -98,10 +135,11 @@
 
             <div class="copy_right">
                 <center>
-                  All Rights Reserved   ||   Copy-Right   ||   Settings <p> contact: <blink>+91-9000000001</blink>  ||   E-mail:<a href="mailto:nadendlagiri2003@gmail.com"> Nadendla Giri</a></p>
+                  All Rights Reserved   ||   Copy-Right   ||   Settings <p> contact: <blink>+91-9000000001</blink>  ||   E-mail:<a href="mailto:nadendlagiri2003@gmail.com">Nadendla Giri</a></p>
                 </center>
             </div>
             
-        </div>   
+        </div>  
+        </div> 
     </body>
 </html>

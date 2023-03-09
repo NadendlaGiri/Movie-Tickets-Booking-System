@@ -52,9 +52,9 @@ body{
     color: white;
     text-decoration: none;
     border: white solid 2px;
-    float: left;
+    float: right;
     margin-top: -10px;
-    margin-right: 60px;
+    margin-right: 45px;
     
 }
 .back center a:hover{
@@ -109,10 +109,19 @@ body{
     margin-top: 0px;
     text-decoration: none;
 }
+.copy_right center button{
+    background-color: transparent;
+    color: white;
+
+}
 .copy_right center p :hover{
     color: white;
     text-decoration: none;
     cursor: pointer;
+}
+.copy_right center p a{
+    text-decoration: none;
+    
 }
 .checkbox{
     transform: scale(1.5);
@@ -146,3 +155,35 @@ body{
     letter-spacing: 1px;
     word-spacing: 5px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    text-align: center;
+  }

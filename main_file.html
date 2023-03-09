@@ -9,8 +9,65 @@
     <title>Booking Tickets in Theatres</title>
 
     <link rel="stylesheet" href="main_file.css">
+
+    <script>
+      function logout(){
+        window.location.href="file.html";
+        alert('Successfully Loged Out.Thank you.');
+       
+      }
+
+
+      // function searchpageforname(){
+      //   const name = document.getElementById('search');
+      //   const walker = document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);
+
+      //   while(walker.nextNode()){
+      //     const node = walker.currentNode;
+      //     const index = node.textContent.indexOf(name);
+      //     if(index >= 0){
+      //       const before = node.textContent.substring(0,index);
+      //       const after = node.textContent.substring(index+ name.length);
+      //       const span = document.createElement('span');
+      //       span.style.backgroundColor = 'yellow';
+      //       span.appendChild(document.createTextNode(before),span);
+      //       if(after){
+      //         const afterNode = document.createTextNode(after);
+      //         span.parentNode.insertBefore(afterNode,span.nextSibling);
+      //         walker.currentNode = afterNode;
+      //       }
+      //     }
+      //   }
+      // }
+
+
+      
+      function searchPageForName(){
+        const name = document.getElementById('search-box').value;
+        const walker = document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);
+
+        while(walker.nextNode()){
+          const node = walker.currentNode;
+          const index = node.textContent.indexOf(name);
+          if(index >= 0){
+            const before = node.textContent.substring(0,index);
+            const after = node.textContent.substring(index+ name.length);
+            const span = document.createElement('span');
+            span.style.backgroundColor = 'yellow';
+            span.appendChild(document.createTextNode(before),span);
+            if(after){
+              const afterNode = document.createTextNode(after);
+              span.parentNode.insertBefore(afterNode,span.nextSibling);
+              walker.currentNode = afterNode;
+            }
+          }
+        }
+      }
+    </script>
 </head>
 <body class="body">
+  
+
     <!--Heading starts-->
     <div class="header">
       <div class="byt">
@@ -38,7 +95,7 @@
 
     
     <div class="Login">
-      <a href="login.html" input type="button"> Logout </a>
+      <a href="#" input type="button" onclick="logout()"> Logout </a>
     </div>
     <div class="nothing">
         <center>
@@ -52,8 +109,8 @@
             <div id="suggestions"></div>
             
             <div class="button">
-                <input type="button"class="button" value="Search">
-                <!--<button type="submit">Search</button>-->
+                <input type="button"class="button" value="Search" id="search" onclick="searchPageForName()">
+                <!-- <button type="submit" onclick="event.preventDefault();searchpageforname()">Search</button> -->
             </div>
             
         </div>
@@ -68,240 +125,190 @@
 
 
     <!--Content Starts-->
-    
-    <div class="adventure">
-        <a href="adventure.html" inout type="button">Adventure :-</a>
-        
-    </div> 
-    <div class="photos">
-        <div>
-            <img src="../Photos/VSR.jpg" alt="IMBD rated as 5.6"><br>
-            <center>
-                <a href="veerasimhareddy.html" input type="button"> Veera Simha Reddy </a>
-            </center>
+    <div class="all">
+          <div class="adventure">
+            <a href="adventure.html" inout type="button">Adventure :-</a>
             
-        </div>
-        <div class="rrr">
-            <img src="../Photos/Major.jpg"><br>
-            <center>
-               <a href="Major.html" input type="button"> Major </a>
-            </center>
-        </div>
-        <div>
-            <img src="../Photos/IMP.jpg"><br>
-            <center>
-               <a href="IMP.html" input type="button"> Itlu Maredupalli Niyorjakavargam </a>
-            </center>   
-        </div>
-        <div>
-            <img src="../Photos/WV.jpg"><br>
-            <center>
-               <a href="wv.html" input type="button"> Walteir Veerayya </a>
-            </center>
-        </div>
-    </div>
-    <div class="adventure">
-        <a href="drama.html" input type="button">Drama :-</a>
-    </div> 
+          </div> 
+          <div class="photos">
+            <div>
+                  <a href="veerasimhareddy.html"><img src="../Photos/VSR.jpg" alt="IMBD rated as 5.6"><br></a>
+                  <center>
+                    <a href="veerasimhareddy.html" input type="button"> Veera Simha Reddy </a>
+                  </center>
+                  
+              </div>
+              <div class="rrr">
+                  <a href="major.html"><img src="../Photos/Major.jpg"><br></a>
+                  <center>
+                    <a href="Major.html" input type="button"> Major </a>
+                  </center>
+              </div>
+              <div>
+                  <a href="IMP.html"><img src="../Photos/IMP.jpg"><br></a>
+                  <center>
+                    <a href="IMP.html" input type="button"> Itlu Maredupalli Niyorjakavargam </a>
+                  </center>   
+              </div>
+              <div>
+                  <a href="wv.html"><img src="../Photos/WV.jpg"><br></a>
+                  <center>
+                    <a href="wv.html" input type="button"> Walteir Veerayya </a>
+                  </center>
+              </div>
+          </div>
+          <div class="adventure">
+              <a href="drama.html" input type="button">Drama :-</a>
+          </div> 
 
 
 
-    <div class="photos">    
-        <div>
-            <img src="../Photos/Bim.jpg"><br>
-            <center>
-               <a href="Bimbisara.html" input type="button"> Bimbisara </a>
-            </center>
+          <div class="photos">    
+              <div>
+                  <a href="Bimbisara.html"><img src="../Photos/Bim.jpg"><br></a>
+                  <center>
+                    <a href="Bimbisara.html" input type="button"> Bimbisara </a>
+                  </center>
+              </div>
+              <div>
+                  <a href="rrr.html"><img src="../Photos/IMG_20230211_070449.jpg"><br></a>
+                  <center>
+                    <a href="rrr.html" input type="button"> RRR </a>
+                  </center>
+              </div>
+              <div>
+                  <a href="bharathanenenu.html"><img src="../Photos/BAN.jpg"><br></a>
+                  <center>
+                      <a href="bharathanenenu.html" input type="button"> Bharath Ane Nenu </a>
+                    </center>    
+                  </div>
+              <div>
+                  <a href="bn.html"><img src="../Photos/BN.jpg"><br></a>
+                  <center>
+                      <a href="bn.html" input type="button"> Bheemla Nayak </a>
+                  </center>    
+              </div>
+          
+              
+
+          </div>
+          <div class="adventure">
+              <a href="drama.html" input type="button">Comedy :-</a>
         </div>
-        <div>
-            <img src="../Photos/IMG_20230211_070449.jpg"><br>
-            <center>
-               <a href="rrr.html" input type="button"> RRR </a>
-            </center>
+
+          <div class="photos">
+              <div>
+                <a href="Jatiratnalu.html"><img src="../Photos/Jatiratnalu.jpg"><br></a>
+                  <center>
+                    <a href="Jatiratnalu.html" input type="button"> Jatiratnalu </a>
+                  </center>
+              </div>
+              <div>
+                <a href="Prince.html"><img src="../Photos/Prince.jpg"><br></a>
+                <center>
+                    <a href="prince.html" input type="button"> Prince </a>
+                </center>
+              </div>
+              <div>
+                  <a href="rangastalam.html"><img src="../Photos/Rangastalam.jpg"><br></a>
+                  <center>
+                    <a href="rangastalam.html" input type="button"> Rangastalam </a>
+                  </center>    
+              </div>
+              <div>
+                  <a href="dasaara.html"><img src="../Photos/Dasara.jpg"><br></a>
+                  <center>
+                    <a href="dasara.html" input type="button"> Dasara </a>
+                  </center>    
+              </div>
         </div>
-        <div>
-            <img src="../Photos/BAN.jpg"><br>
-            <center>
-                <a href="bharathanenenu.html" input type="button"> Bharath Ane Nenu </a>
-            </center>    
-        </div>
-        <div>
-            <img src="../Photos/BN.jpg"><br>
-            <center>
-                <a href="bn.html" input type="button"> Bheemla Nayak </a>
-            </center>    
-        </div>
-    
+          
+          
+
+          <div class="adventure">
+              <a href="drama.html" input type="button">Action :-</a>
+          </div>
+
+          <div class="photos">
+
+            <div>
+              <a href="Pushpa.html"><img src="../Photos/Pushpa.jpg"><br></a>
+              <center>
+                  <a href="pushpa.html" input type="button"> Pushpa </a>
+              </center>
+            </div>
+            <div>
+              <a href="jvk.html"><img src="../Photos/jai lava kusa.jpg"><br></a>
+              <center>
+                <a href="jvk.html" input type="button"> Jai Lava Kusa </a>
+              </center>
+            </div>
+          
+            <div>
+              <a href="varisu.html"><img src="../Photos/Varisu.jpg"><br></a>
+                <center>
+                  <a href="varisu.html" input type="button"> Varisu </a>
+                </center>    
+            </div>
+            <div>
+                <a href="Arvindasametha.html"><img src="../Photos/ASVR.jpg"><br></a>
+                <center>
+                  <a href="Arvindasametha.html" input type="button"> Arvinda Sametha </a>
+                </center>    
+            </div>
+          </div>
+      
         
-
-    </div>
-    <div class="adventure">
-        <a href="drama.html" input type="button">Comedy :-</a>
-  </div>
-
-    <div class="photos">
-         <div>
-           <img src="../Photos/Jatiratnalu.jpg"><br>
-            <center>
-               <a href="Jatiratnalu.html" input type="button"> Jatiratnalu </a>
-            </center>
+        
+        <div class="adventure">
+            <a href="drama.html" input type="button">Triller :-</a>
         </div>
-        <div>
-           <img src="../Photos/Prince.jpg"><br>
-           <center>
-              <a href="prince.html" input type="button"> Prince </a>
-           </center>
+        <div class="photos">
+            <div>
+              <a href="Amigos.html"><img src="../Photos/Amigos.jpg"><br></a>
+              <center>
+                  <a href="Amigos.html" input type="button"> Amigos </a>
+                </center>
+          </div>
+          <div>
+              <a href="nandhi.html"><img src="../Photos/Nandhi.jpg"><br></a>
+              <center>
+                <a href="nandhi.html" input type="button"> Nandhi </a>
+              </center>
+          </div>
+          <div>
+              <a href="dasaara.html"><img src="../Photos/Dasara.jpg"><br></a>
+              <center>
+                    <a href="dasaara.html" input type="button"> Dasara </a>
+              </center>    
+            </div>
+          <div>
+              <a href="Hit2.html"><img src="../Photos/Hit2.jpg"><br></a>
+              <center>
+                <a href="Hit2.html" input type="button"> HIT-2 </a>
+                </center>    
+          </div>
         </div>
-        <div>
-            <img src="../Photos/Rangastalam.jpg"><br>
-            <center>
-              <a href="rangastalam.html" input type="button"> Rangastalam </a>
-            </center>    
-        </div>
-        <div>
-            <img src="../Photos/Dasara.jpg"><br>
-            <center>
-              <a href="dasara.html" input type="button"> Dasara </a>
-            </center>    
-        </div>
-    </div>
-    
-    
-
-    <div class="adventure">
-        <a href="drama.html" input type="button">Action :-</a>
-    </div>
-
-    <div class="photos">
-
-       <div>
-        <img src="../Photos/Pushpa.jpg"><br>
-         <center>
-            <a href="pushpa.html" input type="button"> Pushpa </a>
-         </center>
-     </div>
-     <div>
-        <img src="../Photos/jai lava kusa.jpg"><br>
-        <center>
-           <a href="jvk.html" input type="button"> Jai Lava Kusa </a>
-        </center>
-     </div>
-     
-     <div>
-        <img src="../Photos/Varisu.jpg"><br>
-        <center>
-          <a href="varisu.html" input type="button"> Varisu </a>
-        </center>    
-    </div>
-
-
-     <div>
-         <img src="../Photos/ASVR.jpg"><br>
-         <center>
-           <a href="Arvindasametha.html" input type="button"> Arvinda Sametha </a>
-         </center>    
-     </div>
- </div>
- 
-   </div>
-   
-
-   
-
-   
-    <div class="adventure">
-         <a href="drama.html" input type="button">Triller :-</a>
-    </div>
-    <div class="photos">
-        <div>
-          <img src="../Photos/Amigos.jpg"><br>
-           <center>
-              <a href="Amigos.html" input type="button"> Amigos </a>
-           </center>
-       </div>
-       <div>
-          <img src="../Photos/Nandhi.jpg"><br>
-          <center>
-             <a href="nandhi.html" input type="button"> Nandhi </a>
-          </center>
-       </div>
-       <div>
-           <img src="../Photos/Dasara.jpg"><br>
-           <center>
-                <a href="dasaara.html" input type="button"> Dasara </a>
-           </center>    
-        </div>
-       <div>
-           <img src="../Photos/Hit2.jpg"><br>
-           <center>
-             <a href="Hit2.html" input type="button"> HIT-2 </a>
-           </center>    
-       </div>
-   </div>
-   
-
+        
+      </div>
+        
 
     <div class="marquee">
         <blink>
             <p><marquee>Thank You For Choosing Us.</marquee></p>
         </blink>
     </div>    
-    <div class="line2">
-        <h1></h1>
-    </div>
-    <div class="copy_right">
-        <center>
-          All Rights Reserved   ||   Copy-Right   ||   Settings <p> Contact: +91-9000000001  ||   E-mail:<a href="mailto:nadendlagiri2003@gmail.com"> Nadendla Giri</a></p>
-        </center>
-    </div>    
+      <div class="line2">
+            <h1></h1>
+        </div>
+        <div class="copy_right">
+          <center>
+              All Rights Reserved   ||   Copy-Right   ||   Settings <p> Contact: +91-9000000001  ||   E-mail:<a href="mailto:nadendlagiri2003@gmail.com">Nadendla Giri</a></p>
+          </center>
+        </div>    
 
     <!--Content Ends-->
    
-
-
-    
-          
-      
-        <!--<script>
-          const searchBox = document.getElementById("search-box");
-          const suggestionsDiv = document.getElementById("suggestions");
-    
-          // List of predefined names to suggest to the user
-          const names = ["Veera simha reddy", "Jai lava kusa", "prince", "RRR", "Jatiratnalu","gdddf","sdSgz","gdxgx","sggdgdfgd"];
-    
-          function suggestNames() {
-            const searchTerm = searchBox.value.toLowerCase();
-            suggestionsDiv.innerHTML = "";
-    
-            const matchingNames = names.filter((name) =>
-              name.toLowerCase().startsWith(searchTerm)
-            );
-    
-            matchingNames.forEach((name) => {
-              const suggestion = document.createElement("div");
-              suggestion.textContent = name;
-              suggestion.classList.add("suggestion");
-              suggestion.addEventListener("click", () => {
-                searchBox.value = name;
-                suggestionsDiv.innerHTML = "";
-              });
-              suggestionsDiv.appendChild(suggestion);
-            });
-          }
-    
-          searchBox.addEventListener("input", suggestNames);
-          searchBox.addEventListener("focus", suggestNames);
-          searchBox.addEventListener("blur", () => {
-            setTimeout(() => {
-              suggestionsDiv.innerHTML = "";
-            }, 200);
-          });
-        </script>-->
-
-
-
-
-
     <script>
       const searchBox = document.getElementById("search-box");
       const suggestionsDiv = document.getElementById("suggestions");
@@ -318,6 +325,7 @@
         );
 
         matchingNames.forEach((name) => {
+        
           const suggestion = document.createElement("div");
           suggestion.textContent = name;
           suggestion.classList.add("suggestion");
@@ -335,24 +343,8 @@
         setTimeout(() => {
           suggestionsDiv.innerHTML = "";
         }, 200);
-      });
+      });   
     </script>
-    <!--<script>
-      function sendCursorToWord(searchWord){
-        const textbox =document.getElementById('search-box');
-        const text = textbox.value;
-        const startIndex = text.indexOf(searchWord);
-        if(startIndex !== -1){
-          textbox.focus();
-          text.setSelectionRange(startIndex, startIndex + searchWord.length);
-        }
-      }
-    </script>-->
-
-
-
-
-
   </body>
 </html>
 

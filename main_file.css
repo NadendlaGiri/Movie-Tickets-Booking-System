@@ -10,14 +10,14 @@ body{
 }
 .line{ 
     
-    width: 1500px;
+    width: 100%;
     height: 5px;
     background-color: orangered;
     margin-top: -10px;
 }
 
 .line1{    
-    width: 1500px;
+    width: 100%;
     height: 5px;
     background-color: orangered; 
 }
@@ -181,6 +181,7 @@ body{
 .copy_right{
     color: white;
     margin-top: 3px;
+    font-size: 20px;
 }
 .copy_right center p{
     color: white;
@@ -256,12 +257,12 @@ body{
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: transparent;
+    background-color: black;
     
     max-height: 100px;
     overflow-y: auto;
     color: white;
-    width: 30%;
+    width: 35.5%;
     margin-top: 3px;
   }
   #suggestions li {
@@ -271,7 +272,9 @@ body{
   #suggestions li:hover {
     background-color: #f0f0f0;
   }
-
+.all{
+    margin-left: 30px;
+}
 
 
 

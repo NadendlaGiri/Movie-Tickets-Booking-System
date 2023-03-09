@@ -9,19 +9,19 @@ body{
 }
 .line{ 
     
-    width: 1500px;
+    width: 100%;
     height: 5px;
     background-color: orangered;
     margin-top: -30px;
     
 }
 .line1{
-    width: 1500px;
+    width: 100%;
     height: 5px;
     background-color: orangered;
 }
 .line2{
-    width: 1500px;
+    width: 100%;
     height: 5px;
     background-color: orangered;
 }
@@ -101,19 +101,19 @@ photos input:hover{
 
 }
 .Login a{
-    padding: 5px 10px 5px 10px;
-    background-color: orangered;
+    padding: 10px;
+    background-color:black;
     color: white;
     text-decoration: none;
     border: white solid 2px;
     float: right;
-    margin-top: -15px;
+    margin-top: -41px;
     margin-right: 40px;   
-
+    
 }
 .nothing{
-     align-items: center;
-     margin-left: 30%;
+    align-items: center;
+    margin-left: 30%;
 }
 .marquee blink p{
     color: white;
@@ -123,9 +123,8 @@ photos input:hover{
     margin-top: 2px;
 }
 .login a:hover{
-    background: orangered;
-    color:black;
-    transition: 0.3s;
+    background-color: orangered;
+    color:white;
 }
 .view center a:hover{
     padding: 10px 20px 10px 20px;
@@ -145,6 +144,7 @@ photos input:hover{
     border: white solid 2px;
 
 }
+
 .adventure{
     color: white;
 }
@@ -192,17 +192,67 @@ photos input:hover{
     margin-top: 570px;
 }
 .smallmt{
-    color: goldenrod;
+    color: red;
     float: right;
     font-size: 13px;
     margin-right: 16px;
-    margin-top: -45px;
+    margin-top: -48px;
     letter-spacing: 1px;
     word-spacing: 5px;
 }
-
-
-
+.alert{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 40px;
+    background-color: black;
+    color: red;
+    font-size: 18px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px white;
+    display: none;
+    z-index: 9999;
+    filter: none;
+}
+.blur{
+    filter: blur(5px);
+}
+.container.blur{
+    filter: blur(5px) brightness(1);
+}
+.close{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+body{
+    position: relative;
+    height: 100%;
+}
+body::before{
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+    z-index: 9998;
+}
+.noth{
+    display: flex;
+}
+.container{
+    margin-right: 20px;
+}
+.hello{
+    margin-top: -17px;
+}
 
 
 

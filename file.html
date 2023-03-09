@@ -9,8 +9,10 @@
     <link rel="stylesheet" href="Style.css">
 </head>
 <body class="body">
-    <!--Heading starts-->
-    <div class="byt">
+    <div class="hello">
+
+        <!--Heading starts-->
+        <div class="byt">
         <h1>BYT</h1>
     </div>
     <div class="small">
@@ -27,26 +29,27 @@
     <div class="smallmt">
         MoviE TicketS
     </div>
-    <div class="Login">
-         <a href="login.html" input type="button"> Login </a>
-    </div>
     <div class="line" >
         <h1></h1>
     </div>
     <div class="nothing">
         <center>
-       <div class="search">
-            <div class="input">
-                <input type="text" class="input" name="search" placeholder="Enter Movie Name">
+            <div class="search">
+                <div class="input">
+                    <input type="text" class="input" name="search" placeholder="Enter Movie Name">
+                </div>
+                <div class="button">
+                    <input type="button"class="button" value="Search">
+                </div>
             </div>
-            <div class="button">
-                <input type="button"class="button" value="Search">
-            </div>
-        </div>
         </center>
     </div>
+    <div class="Login">
+        <a href="login.html" input type="button"> Login </a>
+        <a href="signin.html" input type="button">Sign in</a>
+    </div>
     <div class="line1">
-           <h1></h1>
+        <h1></h1>
     </div>
     <!--Heading ends-->
     <!--Content Starts-->
@@ -55,11 +58,13 @@
             <p><marquee>Please Login to Book Your Tickets !!!</marquee></p>
         </blink>
     </div>
-    <div class="adventure">
-        <h2>Adventure :-</h2>
-    </div>     
-    <div class="photos">
+    <div class="container">
         
+        <div class="adventure">
+            <h2>Adventure :-</h2>
+        </div>     
+        <div class="photos">
+            
         <div>
             <img src="../Photos/VSR.jpg" alt="IMBD rated as 5.6"><br>
             <center>
@@ -76,51 +81,45 @@
         <div>
             <img src="../Photos/BAN.jpg"><br>
             <center>
-               <input type="button" value="Bharath Ane Nenu" onclick="popup()">
+                <input type="button" value="Bharath Ane Nenu" onclick="popup()">
             </center>   
         </div>
         <div>
             <img src="../Photos/ASVR.jpg"><br>
             <center>
-               <input type="button" value="Arvinda Sametha" onclick="popup()">
+                <input type="button" value="Arvinda Sametha" onclick="popup()">
             </center>
         </div>
-    </div>
-    <div class="adventure">
-        <h2>Drama :-</h2>
-    </div> 
-
-
-
-    <div class="photos">    
-        <div>
-            <img src="../Photos/Bim.jpg"><br>
-            <input type="button" value="Bimbisara" onclick="popup()">
         </div>
-        <div>
-            <img src="../Photos/Major.jpg"><br>
-            <input type="button" value="Major" onclick="popup()">
-        </div>
-        <div>
-            <img src="../Photos/Rangastalam.jpg"><br>
-            <input type="button" value="Rangastalam" onclick="popup()">
-        </div>
-        <div>
-            <img src="../Photos/Dasara.jpg"><br>
-            <input type="button" value="Dasara" onclick="popup()">
-        </div>
+        <div class="adventure">
+            <h2>Drama :-</h2>
+        </div> 
+        
+        <div class="photos">
+            <div>
+                <img src="../Photos/Bim.jpg"/><br>
+                <input type="button" value="Bimbisara" onclick="popup()">
+            </div>
+            <div>
+                <img src="../Photos/Major.jpg"/><br>
+                <input type="button" value="Major" onclick="popup()">
+            </div>
+            <div>
+                <img src="../Photos/Rangastalam.jpg"/><br>
+                <input type="button" value="Rangastalam" onclick="popup()">
+            </div>
+            <div>
+                <img src="../Photos/Dasara.jpg"/><br>
+                <input type="button" value="Dasara" onclick="popup()">
+            </div>
 
+        </div>
     </div>
     <div class="view">
         <center>
-             <a href="login.html" input type="button" onclick="alert('Please Login to View More')"> View More >> </a>
+             <a input type="button" onclick="popup()"> View More >> </a>
         </center>    
-        <script>
-            function popup(){
-                window.alert("Please Login To See about Movie Details");
-            }
-            
-        </script>
+        
 
     </div>
     <div class="line2">
@@ -130,9 +129,28 @@
         <center>
           All Rights Reserved   ||   Copy-Right   ||   Settings <p> contact: <blink>+91-9000000001</blink>  ||   E-mail:<a href="mailto:nadendlagiri2003@gmail.com"> Nadendla Giri</a></p>
         </center>
-
-
-
+        
+        
+        
+        <div id="alert" class="alert">
+            <span class="close" onclick="seen()">&times;</span>
+            Please Login to View Movie Details
+        </div>
+        </div>
+        <script>
+            function popup(){
+        document.getElementById("alert").style.display = "block";
+        document.boby.classList.add("blur");
+    }
+    function blur(){
+        document.getElementsByClassName("alert").remove("blur");
+        document.body.classList.remove("blur");
+    }
+    function seen(){
+        document.getElementById("alert").style.display = "none";
+        document.body.classList.remove("blur");
+    }
+</script>
 
     <!--Content Ends-->
 </body>
